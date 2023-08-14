@@ -28,12 +28,12 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <form>
-          <label htmlFor="gender">Select your gender:</label> <br/>
+          <h2 htmlFor="gender">Select your gender:</h2> <br/>
           <input type="radio" onChange={(e)=>{genderselected(e)}} defaultChecked name="gen" id="gender1" value="male"/>
           <label htmlFor="gender1">Male</label>
           <input type="radio" onChange={(e)=>{genderselected(e)}} name="gen" id="gender2" value="female"/>
           <label htmlFor="gender2">Female</label> <br/>
-          <label htmlFor="size">Select your {genselec} size:</label> <br/>
+          <h2 htmlFor="size">Select your {genselec} size:</h2> <br/>
 
           {(gendress==="male") && <select onChange={(e)=>{trigger(e)}}>
             <option disabled>Select size</option>
